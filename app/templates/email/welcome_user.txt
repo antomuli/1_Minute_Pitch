@@ -1,0 +1,4 @@
+Hello {{user.username}}
+Welcome to 1_Minute_Pitch
+You have now signed up for the application and can now start sharing your pitches to everyone.
+Good luck.
