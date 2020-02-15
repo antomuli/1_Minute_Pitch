@@ -1,0 +1,18 @@
+
+
+{% extends 'base.html'%}
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% if current_user.is_authenticated %}
+            <a id="start" class="btn btn-danger animated infinite flash" href="{{url_for('main.interview_pitches')}}">See All Pitches</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
