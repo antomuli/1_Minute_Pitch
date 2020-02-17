@@ -3,7 +3,7 @@
 **1_Minute_Pitch**
 
 ## Description
-This is a web application (1_Minute_Pitch) allows users to submit their one minute pitches and other users will vote on them and leave comments to give their feedback. The pitches are organized categorically.. You can visit the live site on ``
+This is a web application (1_Minute_Pitch) allows users to submit their one minute pitches and other users will vote on them and leave comments to give their feedback. The pitches are organized categorically.. You can visit the live site on `https://desolate-shelf-62404.herokuapp.com/Add`
 
 ## Author
 
@@ -44,7 +44,7 @@ As a user of the web application you will be able to:
 * In your terminal:
         
         $ git clone https://github.com/antomuli/1_Minute_Pitch.git
-        $ cd last-pitch
+        $ cd 1_Minute_Pitch
 
 ## Running the Application
 * Install virtual environment using `$ python3.6 -m venv --without-pip virtual`
@@ -78,7 +78,7 @@ This application is developed using [Python3.6](https://www.python.org/doc/), [F
 
 
 ## Support and Team
-Anthony Muli
+Anthony Muli 
 
 ### License
 
