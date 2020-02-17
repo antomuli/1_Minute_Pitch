@@ -42,3 +42,16 @@
     {% endif %}
 </div>
 {% endmacro %}
+{% macro displayPitches(pitches) %}
+<div class="row mt">
+    {% if pitches %}
+        {% for pitch in pitches %}
+            <p>{{pitch.pitch_content}}</p>
+        {% endfor %}
+    {% else %}
+        <p>jhhv</p>
+    {% endif %}
+</div>
+
+
+{% endmacro%}

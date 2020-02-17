@@ -1,0 +1,9 @@
+
+*{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    align-items: center;
+}
+body {
+    background-image: url(https://images.pexels.com/photos/47343/the-ball-stadion-horn-corner-47343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}

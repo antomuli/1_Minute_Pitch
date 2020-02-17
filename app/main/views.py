@@ -89,7 +89,9 @@ def new_pitch():
 @main.route('/pitches/interview_pitches')
 def interview_pitches():
 
-    pitches = Pitch.get_pitches('interview')
+    # pitches = Pitch.get_pitches('interview')
+    # print(pitches)
+    pitches = Pitch.query.filter_by(category='interviewpitch').all()
 
     return render_template("interview_pitches.html", pitches = pitches)
 
@@ -149,3 +151,23 @@ def user_pitches(uname):
     user_joined = user.date_joined.strftime('%b %d, %Y')
 
     return render_template("profile/pitches.html", user=user,pitches=pitches,pitches_count=pitches_count,date = user_joined)
+
+@main.route('/profile/pitches')
+def get_all_pitches():
+
+    pitches = Pitch.query.all()
+
+    return render_template("profile/pitches.html", pitches=pitches)
+
+
+
+@main.route('/pitches/<user_id>', methods =['GET'])
+def get_pitches_by_user_id(user_id):
+
+    user=User.query.filter_by(id=user_id).first()
+    pitches = Pitch.query.filter_by(user_id=user.id).all()
+
+    print(pitches)
+    print(user)
+
+    return render_template("user_pitches.html", user = user, pitches=pitches, user_id=user_id)

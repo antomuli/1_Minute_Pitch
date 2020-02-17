@@ -1,0 +1,49 @@
+{% extends 'base.html'%} 
+{% block content %}
+
+
+{% if user.profile_pic_path %} 
+ {%else%}
+ <div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h1></h1>
+                <h1>No. of profile pictures </h1>
+            </div>
+        </div>
+    </div>
+
+{% endif %} 
+{% if user == current_user %}
+ 
+{% endif %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h1>Name: {{user.username| capitalize}}</h1>
+                <a href="{{url_for('main.get_pitches_by_user_id', user_id=user.id)}}">pitches</a>
+
+                <h1>No of pitches: {{pitches}}</h1> 
+                
+                <h1>Date joined: {{posted}}</h1> 
+                
+                <p>Bio
+                {% if user.bio %}
+                
+                {{user.bio}}
+                </p>
+                {%else%}
+                {{user.username| capitalize}} <p>has no bio</p>
+                
+                {% endif %} 
+            </div>
+        </div>
+    </div>
+
+{% if user == current_user %} 
+</div>
+{% endif %}
+<!-- <p>Pitches</p> -->
+{% endblock %}

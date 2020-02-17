@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{%import 'macros.html' as macro%}
+
+{% block content %}
+
+
+
+<p>Pitches</p>
+{% for pitch in pitches %}
+
+    <ul>
+        <li>{{pitch.pitch_content}}</li>
+    </ul>
+
+{% endfor %}
+
+{% endblock %}
