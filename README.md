@@ -3,7 +3,7 @@
 **1_Minute_Pitch**
 
 ## Description
-This is a web application (1_Minute_Pitch) allows users to submit their one minute pitches and other users will vote on them and leave comments to give their feedback. The pitches are organized categorically.. You can visit the live site on `https://desolate-shelf-62404.herokuapp.com/Add`
+This is a web application (1_Minute_Pitch) allows users to submit their one minute pitches and other users will vote on them and leave comments to give their feedback. The pitches are organized categorically.. You can visit the live site on **https://desolate-shelf-62404.herokuapp.com/Add**
 
 ## Author
 
@@ -32,7 +32,9 @@ As a user of the web application you will be able to:
 | Click upvote/ downvote button | Redirects to home page | Upvote/ downvote count changes | Click add comment button | Redirects to the comment page | Displays a comment form | Click on Sign Out | Redirects to the home page | Signs user out |
 | Click on profile | Redirects to the profile page | User adds bio and profile picture |
 
+## CODEBEAT
 
+[![codebeat badge](https://codebeat.co/badges/6feab53a-468f-4b8c-b6bf-1ac5d10bfcd1)](https://codebeat.co/projects/github-com-antomuli-1_minute_pitch-master)
 
 ## Getting started
 ### Prerequisites
